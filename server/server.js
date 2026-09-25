@@ -30,15 +30,11 @@ app.use("/api/service", serviceRoutes);
 app.use("/api/maintenance", maintenanceRoutes);
 app.use("/api/qualification", qualificationRoutes);
 
-// Home / Health Check
+// Health Check
 app.get("/", (req, res) => {
     res.json({
         message: "Pharma Equipment API is running"
     });
 });
 
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
