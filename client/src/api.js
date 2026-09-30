@@ -1,4 +1,4 @@
-const API_BASE = "https://pharma-equipment-api.hassan-shahzad-portfoli.workers.dev/api";
+const API_BASE = "https://pharma-equipment-system-7jf09jaw9-hassanshahzad1294.vercel.app/api";
 
 export async function apiRequest(endpoint, options = {}) {
     const token = localStorage.getItem("token");
